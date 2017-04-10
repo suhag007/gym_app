@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Add New Customer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" name="Name" placeholder="Name" ngModel></ion-input>
+    </ion-item>
+    <br/>
+
+    <ion-item>
+      <ion-input type="text"  name="Father_name" placeholder="Father Name" ngModel></ion-input>
+    </ion-item>
+     <br/>
+
+    <ion-item>
+      <ion-input type="textarea" name="Address" placeholder="Address" ngModel></ion-input>
+    </ion-item>
+     <br/>
+
+     <ion-item>
+      <ion-input type="text" name="Phone_no" placeholder="Phone No" ngModel></ion-input>
+    </ion-item>
+     <br/>
+
+     <ion-item>
+       <ion-input type="date" name="join_date" placeholder="Date" ngModel></ion-input>
+     </ion-item>
+
+     <ion-item>
+      <ion-label>Plan</ion-label>
+      <ion-select name="Planselected" ngModel>
+       <ion-option value="Normal" selected="true">Normal</ion-option>
+       <ion-option value="Advance">Advance</ion-option>
+      </ion-select>
+     </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button type="submit" color="primary" block>Register</button>
+  </div>
+
+ </form>
+</ion-content>
