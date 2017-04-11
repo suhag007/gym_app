@@ -12,6 +12,8 @@ import { AddNewCustomer } from '../pages/add-new-customer/add-new-customer';
 import { Renewmembership } from '../pages/renewmembership/renewmembership';
 import { Searchcustomer } from '../pages/searchcustomer/searchcustomer';
 import { Status } from '../pages/status/status';
+import { Singlecustomerdetial } from '../pages/singlecustomerdetial/singlecustomerdetial';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { Status } from '../pages/status/status';
     AddNewCustomer,
     Renewmembership,
     Searchcustomer,
-    Status
+    Status,
+    Singlecustomerdetial
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { Status } from '../pages/status/status';
     AddNewCustomer,
     Renewmembership,
     Searchcustomer,
-    Status
+    Status,
+    Singlecustomerdetial
   ],
   providers: [
     StatusBar,
